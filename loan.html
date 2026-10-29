@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan &amp; EMI Calculator - Monthly Payment &amp; Amortization | OnlineCalculatorHub</title>
+  <meta name="description" content="Calculate monthly loan payments (EMI), total interest, and annual amortization schedules. Multi-currency support for PKR, USD, AED, GBP, and INR.">
+  <link rel="canonical" href="https://onlinecalculatorhub.site/loan.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='2' width='16' height='20' rx='2'/%3E%3Cline x1='8' y1='6' x2='16' y2='6'/%3E%3Cline x1='16' y1='14' x2='16' y2='18'/%3E%3Cpath d='M16 10h.01'/%3E%3Cpath d='M12 10h.01'/%3E%3Cpath d='M8 10h.01'/%3E%3Cpath d='M12 14h.01'/%3E%3Cpath d='M8 14h.01'/%3E%3Cpath d='M12 18h.01'/%3E%3Cpath d='M8 18h.01'/%3E%3C/svg%3E">
+  <meta property="og:title" content="Loan &amp; EMI Calculator - Monthly Payment &amp; Amortization | OnlineCalculatorHub">
+  <meta property="og:description" content="Calculate exact EMI, total interest, and yearly amortization across PKR, USD, AED, GBP, and INR.">
+  <meta property="og:url" content="https://onlinecalculatorhub.site/loan.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OnlineCalculatorHub">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OnlineCalculatorHub Loan EMI Calculator",
+    "url": "https://onlinecalculatorhub.site/loan.html",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "description": "Calculates equated monthly installments (EMI), interest totals, and annual repayment schedules for personal, auto, and home loans."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an EMI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EMI stands for Equated Monthly Installment. It is a fixed payment amount made by a borrower to a lender at a specified calendar date each month to pay off both principal and interest over the loan tenure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the loan tenure affect total interest paid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A longer loan tenure lowers your monthly payment (EMI) but significantly increases the cumulative total interest paid over the life of the loan. A shorter tenure increases monthly payments but reduces total interest."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What currency formats are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can calculate in Pakistani Rupee (PKR), United States Dollar (USD), UAE Dirham (AED), British Pound (GBP), or Indian Rupee (INR) with localized formatting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this calculation include banking processing fees or insurance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. This tool computes standard reducing-balance interest and principal repayment. Lender administrative fees, processing charges, insurance, and taxes are not included."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="OnlineCalculatorHub Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="8" y1="6" x2="16" y2="6"></line>
+            <line x1="16" y1="14" x2="16" y2="18"></line>
+            <path d="M16 10h.01"></path>
+            <path d="M12 10h.01"></path>
+            <path d="M8 10h.01"></path>
+            <path d="M12 14h.01"></path>
+            <path d="M8 14h.01"></path>
+            <path d="M12 18h.01"></path>
+            <path d="M8 18h.01"></path>
+          </svg>
+        </div>
+        <span class="brand-title">OnlineCalculatorHub</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-icon"><span></span><span></span><span></span></span>
+        <span class="nav-toggle-text">Menu</span>
+      </button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Home</span></a></li>
+          <li><a href="index.html#standard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path></svg><span>Standard</span></a></li>
+          <li><a href="scientific.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19L9 5M15 5l5 14M9 12h6"></path></svg><span>Scientific</span></a></li>
+          <li><a href="percentage.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg><span>Percentage</span></a></li>
+          <li><a href="bmi.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg><span>BMI</span></a></li>
+          <li><a href="age.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Age</span></a></li>
+          <li><a href="loan.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg><span>Loan</span></a></li>
+          <li><a href="salary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v12M15 9.5a3.5 3.5 0 0 0-6 0c0 3 6 2 6 5a3.5 3.5 0 0 1-6 0"></path></svg><span>Salary</span></a></li>
+          <li><a href="zakat.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><span>Zakat</span></a></li>
+          <li><a href="converter.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg><span>Converter</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="page-intro">
+      <h1>Loan / EMI Calculator</h1>
+      <p class="page-subtitle">Calculate your monthly loan payment and total cost.</p>
+    </div>
+
+    <!-- Panel 6 Layout matching Reference Image -->
+    <section class="tool-card" aria-label="Interactive Loan EMI Calculator">
+      <div class="form-grid-4">
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="currencySelect">Currency</label>
+          <select class="select-field" id="currencySelect">
+            <option value="PKR" selected>PKR</option>
+            <option value="USD">USD</option>
+            <option value="AED">AED</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="loanAmount">Loan Amount</label>
+          <input type="number" step="any" class="input-field" id="loanAmount" value="1000000" placeholder="1000000">
+        </div>
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="interestRate">Annual Interest Rate (%)</label>
+          <input type="number" step="0.01" class="input-field" id="interestRate" value="12" placeholder="12">
+        </div>
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="loanTenureMonths">Loan Tenure (Months)</label>
+          <input type="number" step="1" class="input-field" id="loanTenureMonths" value="60" placeholder="60">
+        </div>
+      </div>
+
+      <button type="button" class="btn-primary" id="calculateLoanBtn" style="margin-bottom: 1.25rem;">Calculate</button>
+
+      <!-- Result Card: Light Blue matching Panel 6 -->
+      <div class="result-box-blue">
+        <div class="result-stats-grid">
+          <div>
+            <div class="result-tag">Monthly EMI</div>
+            <div class="result-main" id="monthlyEmiDisplay">PKR 22,244</div>
+          </div>
+          <div>
+            <div class="result-tag">Total Payment</div>
+            <div class="result-main" id="summaryTotalPayment">PKR 1,334,667</div>
+          </div>
+          <div>
+            <div class="result-tag">Total Interest</div>
+            <div class="result-main" id="summaryInterest">PKR 334,667</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yearly Summary Table matching Panel 6 in Reference Image -->
+      <h3 style="margin-top: 1.75rem; font-size: 1.15rem; font-weight: 700;">Yearly Summary</h3>
+      <div class="table-responsive">
+        <table class="calc-table" id="amortizationTable">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Principal</th>
+              <th>Interest</th>
+              <th>EMI</th>
+              <th>Balance</th>
+            </tr>
+          </thead>
+          <tbody id="amortizationTableBody">
+            <!-- Rendered dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Content & SEO Sections -->
+    <article class="info-section">
+      <h2>How to Use the Loan &amp; EMI Calculator</h2>
+      <ol>
+        <li><strong>Choose Currency:</strong> Pick your designated transaction currency (PKR, USD, AED, GBP, or INR).</li>
+        <li><strong>Enter Principal:</strong> Input the total borrowed sum before upfront down payments.</li>
+        <li><strong>Specify Interest Rate:</strong> Enter the lender's annual percentage rate (APR).</li>
+        <li><strong>Set Tenure in Months:</strong> Enter duration in total months (e.g., 36 months for 3 years, 60 for 5 years).</li>
+        <li><strong>Analyze Schedule:</strong> Check the monthly payment figure and study the yearly amortization table to observe how your principal balance diminishes.</li>
+      </ol>
+
+      <h2>Mathematical EMI Formula</h2>
+      <p>The standard equated monthly installment (reducing balance method) is formulated as:</p>
+      <div class="formula-display">
+EMI = [P &times; r &times; (1 + r)^n] / [(1 + r)^n &minus; 1]
+
+Where:
+  P = Principal loan amount
+  r = Monthly interest rate = (Annual Rate / 12) / 100
+  n = Total number of monthly installments
+  Total Repayment = EMI &times; n
+  Total Interest  = Total Repayment &minus; P
+      </div>
+
+      <h2>Worked Example</h2>
+      <div class="example-box">
+        <p><strong>Loan Parameters:</strong> Principal P = 1,000,000 PKR, Annual Rate = 12%, Tenure = 60 months (5 years).</p>
+        <p><strong>Step 1 (Monthly Rate):</strong> <code>r = 12 / 1200 = 0.01</code> (1% per month).</p>
+        <p><strong>Step 2 (Compounding Factor):</strong> <code>(1 + 0.01)^60 = 1.01^60 &approx; 1.816697</code></p>
+        <p><strong>Step 3 (Numerator):</strong> <code>1,000,000 &times; 0.01 &times; 1.816697 = 18,166.97</code></p>
+        <p><strong>Step 4 (Denominator):</strong> <code>1.816697 &minus; 1 = 0.816697</code></p>
+        <p><strong>Step 5 (Monthly EMI):</strong> <code>18,166.97 / 0.816697 &approx; 22,244.45 PKR</code> (approx <strong>22,244 PKR/month</strong>).</p>
+        <p><strong>Totals:</strong> Total paid = 1,334,667 PKR; Total interest = 334,667 PKR.</p>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-wrap">
+        <div class="faq-node">
+          <h3 class="faq-q">What is an EMI?</h3>
+          <p class="faq-a">EMI stands for Equated Monthly Installment. It is a fixed payment amount made by a borrower to a lender at a specified calendar date each month to pay off both principal and interest over the loan tenure.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">How does the loan tenure affect total interest paid?</h3>
+          <p class="faq-a">A longer loan tenure lowers your monthly payment (EMI) but significantly increases the cumulative total interest paid over the life of the loan. A shorter tenure increases monthly payments but reduces total interest.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">What currency formats are supported?</h3>
+          <p class="faq-a">You can calculate in Pakistani Rupee (PKR), United States Dollar (USD), UAE Dirham (AED), British Pound (GBP), or Indian Rupee (INR) with localized formatting.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">Does this calculation include banking processing fees or insurance?</h3>
+          <p class="faq-a">No. This tool computes standard reducing-balance interest and principal repayment. Lender administrative fees, processing charges, insurance, and taxes are not included.</p>
+        </div>
+      </div>
+
+      <h2>Related Calculators</h2>
+      <div class="related-list">
+        <a href="salary.html" class="related-pill">
+          <div class="related-pill-title">Salary Calculator</div>
+          <div class="related-pill-desc">Compute take-home potential, hourly rates, and annual wages.</div>
+        </a>
+        <a href="percentage.html" class="related-pill">
+          <div class="related-pill-title">Percentage Calculator</div>
+          <div class="related-pill-desc">Calculate interest percentages, markups, and discounts.</div>
+        </a>
+        <a href="zakat.html" class="related-pill">
+          <div class="related-pill-title">Zakat Calculator</div>
+          <div class="related-pill-desc">Determine your annual charitable contribution on qualifying assets.</div>
+        </a>
+        <a href="index.html#standard" class="related-pill">
+          <div class="related-pill-title">Standard Calculator</div>
+          <div class="related-pill-desc">General arithmetic calculator with memory storage functions.</div>
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <ul class="footer-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 OnlineCalculatorHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var currencySelect = document.getElementById('currencySelect');
+      var loanAmount = document.getElementById('loanAmount');
+      var interestRate = document.getElementById('interestRate');
+      var loanTenureMonths = document.getElementById('loanTenureMonths');
+      var calculateLoanBtn = document.getElementById('calculateLoanBtn');
+
+      function formatMoney(amount, curr) {
+        return curr + ' ' + Math.round(amount).toLocaleString();
+      }
+
+      function updateEMI() {
+        var P = parseFloat(loanAmount.value);
+        var annualRate = parseFloat(interestRate.value);
+        var months = parseInt(loanTenureMonths.value, 10);
+        var curr = currencySelect.value;
+
+        if (isNaN(P) || isNaN(annualRate) || isNaN(months) || P <= 0 || months <= 0) {
+          return;
+        }
+
+        var r = annualRate / 12 / 100;
+        var emi = 0;
+        if (annualRate === 0) {
+          emi = P / months;
+        } else {
+          var pow = Math.pow(1 + r, months);
+          emi = (P * r * pow) / (pow - 1);
+        }
+
+        var totalPayment = emi * months;
+        var totalInterest = totalPayment - P;
+
+        document.getElementById('monthlyEmiDisplay').textContent = formatMoney(emi, curr);
+        document.getElementById('summaryInterest').textContent = formatMoney(totalInterest, curr);
+        document.getElementById('summaryTotalPayment').textContent = formatMoney(totalPayment, curr);
+
+        var tableBody = document.getElementById('amortizationTableBody');
+        var balance = P;
+        var rowsHtml = '';
+        var currentYearPrincipal = 0;
+        var currentYearInterest = 0;
+        var annualEmi = emi * 12;
+
+        for (var m = 1; m <= months; m++) {
+          var interestForMonth = annualRate === 0 ? 0 : balance * r;
+          var principalForMonth = emi - interestForMonth;
+          balance -= principalForMonth;
+          if (balance < 0) balance = 0;
+
+          currentYearPrincipal += principalForMonth;
+          currentYearInterest += interestForMonth;
+
+          if (m % 12 === 0 || m === months) {
+            var yearNum = Math.ceil(m / 12);
+            rowsHtml += '<tr>' +
+              '<td>' + yearNum + '</td>' +
+              '<td>' + formatMoney(currentYearPrincipal, curr) + '</td>' +
+              '<td>' + formatMoney(currentYearInterest, curr) + '</td>' +
+              '<td>' + formatMoney(emi, curr) + '</td>' +
+              '<td>' + formatMoney(balance, curr) + '</td>' +
+              '</tr>';
+
+            currentYearPrincipal = 0;
+            currentYearInterest = 0;
+          }
+        }
+
+        tableBody.innerHTML = rowsHtml;
+      }
+
+      [currencySelect, loanAmount, interestRate, loanTenureMonths].forEach(function (el) {
+        el.addEventListener('input', updateEMI);
+        el.addEventListener('change', updateEMI);
+      });
+
+      calculateLoanBtn.addEventListener('click', updateEMI);
+
+      updateEMI();
+    })();
+  </script>
+</body>
+</html>

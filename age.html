@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator - Exact Chronological Age &amp; Birthday | OnlineCalculatorHub</title>
+  <meta name="description" content="Calculate your exact chronological age in years, months, days, and hours live from your date of birth. View countdown to your upcoming birthday and total days lived.">
+  <link rel="canonical" href="https://onlinecalculatorhub.site/age.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='2' width='16' height='20' rx='2'/%3E%3Cline x1='8' y1='6' x2='16' y2='6'/%3E%3Cline x1='16' y1='14' x2='16' y2='18'/%3E%3Cpath d='M16 10h.01'/%3E%3Cpath d='M12 10h.01'/%3E%3Cpath d='M8 10h.01'/%3E%3Cpath d='M12 14h.01'/%3E%3Cpath d='M8 14h.01'/%3E%3Cpath d='M12 18h.01'/%3E%3Cpath d='M8 18h.01'/%3E%3C/svg%3E">
+  <meta property="og:title" content="Age Calculator - Exact Chronological Age &amp; Birthday | OnlineCalculatorHub">
+  <meta property="og:description" content="Calculate your live chronological age in years, months, and days with countdown to your upcoming birthday.">
+  <meta property="og:url" content="https://onlinecalculatorhub.site/age.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OnlineCalculatorHub">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OnlineCalculatorHub Age Calculator",
+    "url": "https://onlinecalculatorhub.site/age.html",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "description": "Calculates precise chronological age in years, months, days, total days lived, and upcoming birthday timing."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does the age calculator account for leap years and different month lengths?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The algorithm inspects the exact calendar days of each preceding month and accounts for leap years containing 366 days, ensuring that February 29th and irregular month lengths are accurately evaluated."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I calculate my age at a specific past or future date?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. While it defaults to today's current date, you can customize the 'Age As Of' field to evaluate your age on any past or future historical milestone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is the upcoming birthday countdown determined?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The tool checks whether your birth month and day have passed in the current calendar year. If passed, it targets the following year's date and computes the remaining days and weekday."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my birthdate data saved or shared?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The calculation runs 100% inside your browser via local JavaScript. No personal dates are transmitted across the network or logged."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="OnlineCalculatorHub Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="8" y1="6" x2="16" y2="6"></line>
+            <line x1="16" y1="14" x2="16" y2="18"></line>
+            <path d="M16 10h.01"></path>
+            <path d="M12 10h.01"></path>
+            <path d="M8 10h.01"></path>
+            <path d="M12 14h.01"></path>
+            <path d="M8 14h.01"></path>
+            <path d="M12 18h.01"></path>
+            <path d="M8 18h.01"></path>
+          </svg>
+        </div>
+        <span class="brand-title">OnlineCalculatorHub</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-icon"><span></span><span></span><span></span></span>
+        <span class="nav-toggle-text">Menu</span>
+      </button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Home</span></a></li>
+          <li><a href="index.html#standard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path></svg><span>Standard</span></a></li>
+          <li><a href="scientific.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19L9 5M15 5l5 14M9 12h6"></path></svg><span>Scientific</span></a></li>
+          <li><a href="percentage.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg><span>Percentage</span></a></li>
+          <li><a href="bmi.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg><span>BMI</span></a></li>
+          <li><a href="age.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Age</span></a></li>
+          <li><a href="loan.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg><span>Loan</span></a></li>
+          <li><a href="salary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v12M15 9.5a3.5 3.5 0 0 0-6 0c0 3 6 2 6 5a3.5 3.5 0 0 1-6 0"></path></svg><span>Salary</span></a></li>
+          <li><a href="zakat.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><span>Zakat</span></a></li>
+          <li><a href="converter.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg><span>Converter</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="page-intro">
+      <h1>Age Calculator</h1>
+      <p class="page-subtitle">Find your exact age from your date of birth.</p>
+    </div>
+
+    <!-- Panel 5 Layout with Green Result Box -->
+    <section class="tool-card" aria-label="Interactive Age Calculator">
+      <div class="form-grid-2">
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="dobInput">Date of Birth</label>
+          <input type="date" class="input-field" id="dobInput">
+        </div>
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="asOfInput">Age As Of (Defaults to Today)</label>
+          <input type="date" class="input-field" id="asOfInput">
+        </div>
+      </div>
+
+      <button type="button" class="btn-primary" id="calculateAgeBtn" style="margin-bottom: 1.25rem;">Calculate</button>
+
+      <!-- GREEN Result Box matching Panel 5 in Reference Image -->
+      <div class="result-box-green">
+        <div class="result-tag" style="color: var(--green-text);">Your Age</div>
+        <div class="result-main" style="color: var(--green-bold);" id="ageYearsMonthsDays">--</div>
+        <p class="result-sub" id="ageSummaryLine" style="color: var(--green-text);">Enter your date of birth to view your age breakdown.</p>
+        <ul class="result-list" style="border-top-color: rgba(22, 101, 52, 0.2);">
+          <li class="result-row">
+            <span class="result-row-label">Total Days</span>
+            <span class="result-row-val" id="totalDaysLived">--</span>
+          </li>
+          <li class="result-row">
+            <span class="result-row-label">Upcoming Birthday</span>
+            <span class="result-row-val" id="upcomingBirthdayDetails">--</span>
+          </li>
+          <li class="result-row">
+            <span class="result-row-label">Total Weeks</span>
+            <span class="result-row-val" id="totalWeeksLived">--</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Content & SEO Sections -->
+    <article class="info-section">
+      <h2>How to Use the Age Calculator</h2>
+      <ol>
+        <li><strong>Select Birth Date:</strong> Pick your day, month, and year of birth using the calendar picker.</li>
+        <li><strong>Select Reference Date:</strong> The "Age As Of" field automatically populates with today's live date, but can be altered for milestone calculations.</li>
+        <li><strong>Read Your Age:</strong> View your exact age divided into years, calendar months, and remaining days, along with cumulative days lived.</li>
+      </ol>
+
+      <h2>Worked Example</h2>
+      <div class="example-box">
+        <p><strong>Birth Date:</strong> January 1, 2000</p>
+        <p><strong>Reference Date:</strong> October 29, 2026</p>
+        <p><strong>Step 1 (Years):</strong> 2026 &minus; 2000 = 26 full years.</p>
+        <p><strong>Step 2 (Months):</strong> October is month 10, January is month 1 &rArr; 10 &minus; 1 = 9 full months.</p>
+        <p><strong>Step 3 (Days):</strong> 29 &minus; 1 = 28 days.</p>
+        <p><strong>Result:</strong> <strong>26 Years, 9 Months, 28 Days</strong> (Total of 9,798 days lived).</p>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-wrap">
+        <div class="faq-node">
+          <h3 class="faq-q">How does the age calculator account for leap years and different month lengths?</h3>
+          <p class="faq-a">The algorithm inspects the exact calendar days of each preceding month and accounts for leap years containing 366 days, ensuring that February 29th and irregular month lengths are accurately evaluated.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">Can I calculate my age at a specific past or future date?</h3>
+          <p class="faq-a">Yes. While it defaults to today's current date, you can customize the 'Age As Of' field to evaluate your age on any past or future historical milestone.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">How is the upcoming birthday countdown determined?</h3>
+          <p class="faq-a">The tool checks whether your birth month and day have passed in the current calendar year. If passed, it targets the following year's date and computes the remaining days and weekday.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">Is my birthdate data saved or shared?</h3>
+          <p class="faq-a">No. The calculation runs 100% inside your browser via local JavaScript. No personal dates are transmitted across the network or logged.</p>
+        </div>
+      </div>
+
+      <h2>Related Calculators</h2>
+      <div class="related-list">
+        <a href="bmi.html" class="related-pill">
+          <div class="related-pill-title">BMI Calculator</div>
+          <div class="related-pill-desc">Evaluate body mass index against official WHO health classifications.</div>
+        </a>
+        <a href="salary.html" class="related-pill">
+          <div class="related-pill-title">Salary Calculator</div>
+          <div class="related-pill-desc">Compute hourly, weekly, monthly, and annual gross compensation.</div>
+        </a>
+        <a href="index.html#standard" class="related-pill">
+          <div class="related-pill-title">Standard Calculator</div>
+          <div class="related-pill-desc">Perform basic everyday calculations with memory and history.</div>
+        </a>
+        <a href="zakat.html" class="related-pill">
+          <div class="related-pill-title">Zakat Calculator</div>
+          <div class="related-pill-desc">Calculate your annual 2.5% wealth obligation against nisab.</div>
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <ul class="footer-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 OnlineCalculatorHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var dobInput = document.getElementById('dobInput');
+      var asOfInput = document.getElementById('asOfInput');
+      var calculateBtn = document.getElementById('calculateAgeBtn');
+
+      var today = new Date();
+      var todayStr = today.toISOString().split('T')[0];
+      asOfInput.value = todayStr;
+      dobInput.value = '2000-01-01';
+
+      function updateAge() {
+        var dobVal = dobInput.value;
+        var asOfVal = asOfInput.value || todayStr;
+        if (!dobVal) return;
+
+        var dob = new Date(dobVal + 'T00:00:00');
+        var asOf = new Date(asOfVal + 'T00:00:00');
+
+        if (isNaN(dob.getTime()) || isNaN(asOf.getTime())) return;
+
+        if (asOf < dob) {
+          document.getElementById('ageYearsMonthsDays').textContent = 'Invalid Dates';
+          document.getElementById('ageSummaryLine').textContent = 'The reference date cannot be before the date of birth.';
+          document.getElementById('totalDaysLived').textContent = '--';
+          document.getElementById('totalWeeksLived').textContent = '--';
+          document.getElementById('upcomingBirthdayDetails').textContent = '--';
+          return;
+        }
+
+        var years = asOf.getFullYear() - dob.getFullYear();
+        var months = asOf.getMonth() - dob.getMonth();
+        var days = asOf.getDate() - dob.getDate();
+
+        if (days < 0) {
+          months--;
+          var prevMonth = new Date(asOf.getFullYear(), asOf.getMonth(), 0);
+          days += prevMonth.getDate();
+        }
+
+        if (months < 0) {
+          years--;
+          months += 12;
+        }
+
+        var diffMs = asOf.getTime() - dob.getTime();
+        var totalDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+        var totalWeeks = (totalDays / 7).toFixed(1);
+
+        document.getElementById('ageYearsMonthsDays').textContent =
+          years + ' years, ' + months + ' months, ' + days + ' days';
+        document.getElementById('ageSummaryLine').textContent =
+          'You are ' + years + ' years, ' + months + ' months, and ' + days + ' days old.';
+
+        document.getElementById('totalDaysLived').textContent = totalDays.toLocaleString() + ' days';
+        document.getElementById('totalWeeksLived').textContent = totalWeeks + ' weeks';
+
+        var targetBday = new Date(asOf.getFullYear(), dob.getMonth(), dob.getDate());
+        if (targetBday < asOf) {
+          targetBday.setFullYear(asOf.getFullYear() + 1);
+        }
+        var daysUntilUpcoming = Math.ceil((targetBday.getTime() - asOf.getTime()) / (1000 * 60 * 60 * 24));
+        var weekdayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        var bdayWeekday = weekdayNames[targetBday.getDay()];
+
+        if (daysUntilUpcoming === 0) {
+          document.getElementById('upcomingBirthdayDetails').textContent = 'Today is your Birthday!';
+        } else {
+          document.getElementById('upcomingBirthdayDetails').textContent =
+            daysUntilUpcoming + ' days (' + bdayWeekday + ', ' + targetBday.toLocaleDateString() + ')';
+        }
+      }
+
+      dobInput.addEventListener('change', updateAge);
+      asOfInput.addEventListener('change', updateAge);
+      calculateBtn.addEventListener('click', updateAge);
+
+      updateAge();
+    })();
+  </script>
+</body>
+</html>

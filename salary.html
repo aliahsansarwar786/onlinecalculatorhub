@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary Calculator - Hourly to Annual Income | OnlineCalculatorHub</title>
+  <meta name="description" content="Convert hourly wages to weekly, monthly, and yearly income (gross before tax). Customize working hours and overtime assumptions.">
+  <link rel="canonical" href="https://onlinecalculatorhub.site/salary.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='2' width='16' height='20' rx='2'/%3E%3Cline x1='8' y1='6' x2='16' y2='6'/%3E%3Cline x1='16' y1='14' x2='16' y2='18'/%3E%3Cpath d='M16 10h.01'/%3E%3Cpath d='M12 10h.01'/%3E%3Cpath d='M8 10h.01'/%3E%3Cpath d='M12 14h.01'/%3E%3Cpath d='M8 14h.01'/%3E%3Cpath d='M12 18h.01'/%3E%3Cpath d='M8 18h.01'/%3E%3C/svg%3E">
+  <meta property="og:title" content="Salary Calculator - Hourly to Annual Income | OnlineCalculatorHub">
+  <meta property="og:description" content="Calculate hourly, weekly, monthly, and annual gross earnings before tax.">
+  <meta property="og:url" content="https://onlinecalculatorhub.site/salary.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OnlineCalculatorHub">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OnlineCalculatorHub Salary Calculator",
+    "url": "https://onlinecalculatorhub.site/salary.html",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "description": "Calculates gross earnings across hourly, weekly, monthly, and annual pay schedules before tax."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are tax deductions included in this salary calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. All figures produced by this tool represent gross earnings before income tax, pension contributions, social security, and local withholdings are deducted."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is monthly salary calculated as (Weekly * 52) / 12 instead of Weekly * 4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A standard calendar year contains 52 weeks (365 days), meaning an average month comprises roughly 4.33 weeks rather than exactly 4 weeks. Multiplying weekly pay by 52 and dividing by 12 yields an accurate monthly figure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I convert an annual salary back to an hourly rate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Select 'Annual Salary' mode to input your yearly earnings, and the calculator will automatically divide by your weekly hours and 52 weeks to show your hourly rate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are unworked holidays and paid time off (PTO) handled?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This calculation assumes a 52-week paid working year (including standard paid vacation and holidays). For unpaid leave, adjust your total weekly hours or annual weeks accordingly."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="OnlineCalculatorHub Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="8" y1="6" x2="16" y2="6"></line>
+            <line x1="16" y1="14" x2="16" y2="18"></line>
+            <path d="M16 10h.01"></path>
+            <path d="M12 10h.01"></path>
+            <path d="M8 10h.01"></path>
+            <path d="M12 14h.01"></path>
+            <path d="M8 14h.01"></path>
+            <path d="M12 18h.01"></path>
+            <path d="M8 18h.01"></path>
+          </svg>
+        </div>
+        <span class="brand-title">OnlineCalculatorHub</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-icon"><span></span><span></span><span></span></span>
+        <span class="nav-toggle-text">Menu</span>
+      </button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Home</span></a></li>
+          <li><a href="index.html#standard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path></svg><span>Standard</span></a></li>
+          <li><a href="scientific.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19L9 5M15 5l5 14M9 12h6"></path></svg><span>Scientific</span></a></li>
+          <li><a href="percentage.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg><span>Percentage</span></a></li>
+          <li><a href="bmi.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg><span>BMI</span></a></li>
+          <li><a href="age.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Age</span></a></li>
+          <li><a href="loan.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg><span>Loan</span></a></li>
+          <li><a href="salary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v12M15 9.5a3.5 3.5 0 0 0-6 0c0 3 6 2 6 5a3.5 3.5 0 0 1-6 0"></path></svg><span>Salary</span></a></li>
+          <li><a href="zakat.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><span>Zakat</span></a></li>
+          <li><a href="converter.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg><span>Converter</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="page-intro">
+      <h1>Salary Calculator</h1>
+      <p class="page-subtitle">Convert hourly, weekly, monthly and yearly salary (before tax).</p>
+    </div>
+
+    <!-- Panel 7 Layout matching Reference Image -->
+    <section class="tool-card" aria-label="Interactive Salary Calculator">
+      <div class="tabs-bar" role="tablist">
+        <button type="button" class="tab-pill active" id="tabHourly" role="tab">Hourly</button>
+        <button type="button" class="tab-pill" id="tabWeekly" role="tab">Weekly</button>
+        <button type="button" class="tab-pill" id="tabMonthly" role="tab">Monthly</button>
+        <button type="button" class="tab-pill" id="tabYearly" role="tab">Yearly</button>
+      </div>
+
+      <div class="form-grid-2">
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="payAmount" id="payAmountLabel">Hourly Rate (USD)</label>
+          <input type="number" step="any" class="input-field" id="payAmount" value="20" placeholder="20">
+        </div>
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="hoursPerWeek">Hours per Week</label>
+          <input type="number" step="0.5" class="input-field" id="hoursPerWeek" value="40" placeholder="40">
+        </div>
+      </div>
+
+      <button type="button" class="btn-primary" id="calculateSalaryBtn" style="margin-bottom: 1.25rem;">Calculate</button>
+
+      <!-- Light-Blue Result Card matching Panel 7 in Reference Image -->
+      <div class="result-box-blue">
+        <div class="result-stats-grid">
+          <div>
+            <div class="result-tag">Weekly</div>
+            <div class="result-main" id="resWeekly">USD 800</div>
+          </div>
+          <div>
+            <div class="result-tag">Monthly</div>
+            <div class="result-main" id="resMonthly">USD 3,466.67</div>
+          </div>
+          <div>
+            <div class="result-tag">Yearly</div>
+            <div class="result-main" id="resYearly">USD 41,600</div>
+          </div>
+        </div>
+        <p class="result-sub" style="margin-top: 0.85rem; margin-bottom: 0;">Gross earnings before income tax deductions.</p>
+      </div>
+    </section>
+
+    <!-- Content & SEO Sections -->
+    <article class="info-section">
+      <h2>How to Use the Salary Calculator</h2>
+      <ol>
+        <li><strong>Choose Input Frequency:</strong> Select whether you are starting from an hourly wage, weekly pay, monthly salary, or yearly compensation.</li>
+        <li><strong>Enter Pay Amount:</strong> Type your pay rate in your chosen currency.</li>
+        <li><strong>Set Working Hours:</strong> Enter typical hours worked per week (default is standard full-time 40 hours).</li>
+        <li><strong>Review All Pay Intervals:</strong> View synchronized breakdowns for hourly, weekly, monthly, and yearly gross earnings.</li>
+      </ol>
+
+      <h2>Mathematical Formulas for Salary Conversion</h2>
+      <p>Computations use standard 52-week annual conversion formulas:</p>
+      <div class="formula-display">
+Weekly Salary  = Hourly Rate &times; Hours Per Week
+Annual Salary  = Weekly Salary &times; 52 Weeks
+Monthly Salary = Annual Salary / 12 Months = (Weekly Salary &times; 52) / 12
+Hourly Rate    = Annual Salary / (52 &times; Hours Per Week)
+      </div>
+
+      <h2>Worked Example</h2>
+      <div class="example-box">
+        <p><strong>Parameters:</strong> $20.00 per hour with 40 hours worked per week.</p>
+        <p><strong>Step 1 (Weekly):</strong> <code>$20.00 &times; 40 hours = $800.00 per week</code></p>
+        <p><strong>Step 2 (Annual):</strong> <code>$800.00 &times; 52 weeks = $41,600.00 per year</code></p>
+        <p><strong>Step 3 (Monthly):</strong> <code>$41,600.00 / 12 months &approx; $3,466.67 per month</code></p>
+        <p><strong>Result:</strong> <strong>$800/week</strong> and <strong>$41,600/year</strong> (gross, before tax).</p>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-wrap">
+        <div class="faq-node">
+          <h3 class="faq-q">Are tax deductions included in this salary calculator?</h3>
+          <p class="faq-a">No. All figures produced by this tool represent gross earnings before income tax, pension contributions, social security, and local withholdings are deducted.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">Why is monthly salary calculated as (Weekly * 52) / 12 instead of Weekly * 4?</h3>
+          <p class="faq-a">A standard calendar year contains 52 weeks (365 days), meaning an average month comprises roughly 4.33 weeks rather than exactly 4 weeks. Multiplying weekly pay by 52 and dividing by 12 yields an accurate monthly figure.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">Can I convert an annual salary back to an hourly rate?</h3>
+          <p class="faq-a">Yes. Select 'Annual Salary' mode to input your yearly earnings, and the calculator will automatically divide by your weekly hours and 52 weeks to show your hourly rate.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">How are unworked holidays and paid time off (PTO) handled?</h3>
+          <p class="faq-a">This calculation assumes a 52-week paid working year (including standard paid vacation and holidays). For unpaid leave, adjust your total weekly hours or annual weeks accordingly.</p>
+        </div>
+      </div>
+
+      <h2>Related Calculators</h2>
+      <div class="related-list">
+        <a href="loan.html" class="related-pill">
+          <div class="related-pill-title">Loan / EMI Calculator</div>
+          <div class="related-pill-desc">Estimate monthly repayments for mortgages, cars, or personal loans.</div>
+        </a>
+        <a href="percentage.html" class="related-pill">
+          <div class="related-pill-title">Percentage Calculator</div>
+          <div class="related-pill-desc">Calculate salary increases, bonuses, and commission rates.</div>
+        </a>
+        <a href="zakat.html" class="related-pill">
+          <div class="related-pill-title">Zakat Calculator</div>
+          <div class="related-pill-desc">Compute charitable obligations from surplus savings and wealth.</div>
+        </a>
+        <a href="age.html" class="related-pill">
+          <div class="related-pill-title">Age Calculator</div>
+          <div class="related-pill-desc">Determine exact chronological age and milestone timing.</div>
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <ul class="footer-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 OnlineCalculatorHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var payInput = document.getElementById('payAmount');
+      var hoursInput = document.getElementById('hoursPerWeek');
+      var calcBtn = document.getElementById('calculateSalaryBtn');
+      var payLabel = document.getElementById('payAmountLabel');
+      var currentMode = 'hourly';
+
+      var tabH = document.getElementById('tabHourly');
+      var tabW = document.getElementById('tabWeekly');
+      var tabM = document.getElementById('tabMonthly');
+      var tabY = document.getElementById('tabYearly');
+
+      function setMode(mode, tab) {
+        currentMode = mode;
+        [tabH, tabW, tabM, tabY].forEach(function (t) { t.classList.remove('active'); });
+        tab.classList.add('active');
+        if (mode === 'hourly') payLabel.textContent = 'Hourly Rate (USD)';
+        else if (mode === 'weekly') payLabel.textContent = 'Weekly Salary (USD)';
+        else if (mode === 'monthly') payLabel.textContent = 'Monthly Salary (USD)';
+        else if (mode === 'yearly') payLabel.textContent = 'Annual Salary (USD)';
+        updateSalary();
+      }
+
+      tabH.addEventListener('click', function () { setMode('hourly', tabH); });
+      tabW.addEventListener('click', function () { setMode('weekly', tabW); });
+      tabM.addEventListener('click', function () { setMode('monthly', tabM); });
+      tabY.addEventListener('click', function () { setMode('yearly', tabY); });
+
+      function formatCur(val) {
+        return 'USD ' + Number(val.toFixed(2)).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      }
+
+      function updateSalary() {
+        var val = parseFloat(payInput.value);
+        var hours = parseFloat(hoursInput.value);
+
+        if (isNaN(val) || isNaN(hours) || val <= 0 || hours <= 0) return;
+
+        var hourly = 0;
+        var weekly = 0;
+        var monthly = 0;
+        var yearly = 0;
+
+        if (currentMode === 'hourly') {
+          hourly = val;
+          weekly = hourly * hours;
+          yearly = weekly * 52;
+          monthly = yearly / 12;
+        } else if (currentMode === 'weekly') {
+          weekly = val;
+          hourly = weekly / hours;
+          yearly = weekly * 52;
+          monthly = yearly / 12;
+        } else if (currentMode === 'monthly') {
+          monthly = val;
+          yearly = monthly * 12;
+          weekly = yearly / 52;
+          hourly = weekly / hours;
+        } else if (currentMode === 'yearly') {
+          yearly = val;
+          weekly = yearly / 52;
+          monthly = yearly / 12;
+          hourly = weekly / hours;
+        }
+
+        document.getElementById('resWeekly').textContent = formatCur(weekly);
+        document.getElementById('resMonthly').textContent = formatCur(monthly);
+        document.getElementById('resYearly').textContent = formatCur(yearly);
+      }
+
+      [payInput, hoursInput].forEach(function (el) {
+        el.addEventListener('input', updateSalary);
+      });
+      calcBtn.addEventListener('click', updateSalary);
+
+      updateSalary();
+    })();
+  </script>
+</body>
+</html>

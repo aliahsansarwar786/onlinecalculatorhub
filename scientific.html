@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator Online - Advanced Functions | OnlineCalculatorHub</title>
+  <meta name="description" content="Free scientific calculator online. Compute trigonometry in degrees (sin, cos, tan), square roots, powers (x^y, x^2), logarithms (log10, ln), factorials, and constants.">
+  <link rel="canonical" href="https://onlinecalculatorhub.site/scientific.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='2' width='16' height='20' rx='2'/%3E%3Cline x1='8' y1='6' x2='16' y2='6'/%3E%3Cline x1='16' y1='14' x2='16' y2='18'/%3E%3Cpath d='M16 10h.01'/%3E%3Cpath d='M12 10h.01'/%3E%3Cpath d='M8 10h.01'/%3E%3Cpath d='M12 14h.01'/%3E%3Cpath d='M8 14h.01'/%3E%3Cpath d='M12 18h.01'/%3E%3Cpath d='M8 18h.01'/%3E%3C/svg%3E">
+  <meta property="og:title" content="Scientific Calculator Online - Advanced Functions | OnlineCalculatorHub">
+  <meta property="og:description" content="Free online scientific calculator with trigonometric functions in degrees, powers, roots, logarithms, factorials, and constants.">
+  <meta property="og:url" content="https://onlinecalculatorhub.site/scientific.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OnlineCalculatorHub">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OnlineCalculatorHub Scientific Calculator",
+    "url": "https://onlinecalculatorhub.site/scientific.html",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "description": "Online scientific calculator featuring trigonometric functions in degrees, logarithms, powers, factorials, and roots."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are trigonometric functions evaluated in degrees or radians?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By default and design, all trigonometric functions (sin, cos, tan) on OnlineCalculatorHub are calculated in degrees. For example, sin(30) calculates as 0.5."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between log10 and ln?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "log10 calculates the common logarithm with base 10 (e.g., log10(100) = 2). In contrast, ln calculates the natural logarithm using Euler's number e (approx 2.71828) as the base (e.g., ln(e) = 1)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the factorial (n!) function work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Factorial multiplies an integer by every positive integer below it. For example, 5! = 5 * 4 * 3 * 2 * 1 = 120. Factorials for negative numbers or non-integers return an Error."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate custom powers like 2^3?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the x^y button to insert the exponentiation operator (^). For example, entering 2^3 and pressing '=' yields 8."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="OnlineCalculatorHub Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="8" y1="6" x2="16" y2="6"></line>
+            <line x1="16" y1="14" x2="16" y2="18"></line>
+            <path d="M16 10h.01"></path>
+            <path d="M12 10h.01"></path>
+            <path d="M8 10h.01"></path>
+            <path d="M12 14h.01"></path>
+            <path d="M8 14h.01"></path>
+            <path d="M12 18h.01"></path>
+            <path d="M8 18h.01"></path>
+          </svg>
+        </div>
+        <span class="brand-title">OnlineCalculatorHub</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-icon"><span></span><span></span><span></span></span>
+        <span class="nav-toggle-text">Menu</span>
+      </button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Home</span></a></li>
+          <li><a href="index.html#standard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path></svg><span>Standard</span></a></li>
+          <li><a href="scientific.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19L9 5M15 5l5 14M9 12h6"></path></svg><span>Scientific</span></a></li>
+          <li><a href="percentage.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg><span>Percentage</span></a></li>
+          <li><a href="bmi.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg><span>BMI</span></a></li>
+          <li><a href="age.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Age</span></a></li>
+          <li><a href="loan.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg><span>Loan</span></a></li>
+          <li><a href="salary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v12M15 9.5a3.5 3.5 0 0 0-6 0c0 3 6 2 6 5a3.5 3.5 0 0 1-6 0"></path></svg><span>Salary</span></a></li>
+          <li><a href="zakat.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><span>Zakat</span></a></li>
+          <li><a href="converter.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg><span>Converter</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="page-intro">
+      <h1>Scientific Calculator</h1>
+      <p class="page-subtitle">Advanced functions for complex calculations.</p>
+    </div>
+
+    <!-- Panel 2 Layout -->
+    <section class="tool-card" aria-label="Interactive Scientific Calculator">
+      <div class="calc-split">
+        <div class="keypad-wrapper">
+          <div class="keypad-screen">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+              <span style="font-size: 0.75rem; color: #38bdf8; font-weight: 700;">DEG</span>
+              <div class="keypad-expr" id="sciHistoryDisplay" aria-live="polite"></div>
+            </div>
+            <div class="keypad-val" id="sciDisplay" aria-live="assertive">0</div>
+          </div>
+
+          <div class="keypad-grid-5">
+            <!-- Row 1: Memory & Parens -->
+            <button type="button" class="calc-key key-fn" data-action="mc">MC</button>
+            <button type="button" class="calc-key key-fn" data-action="mr">MR</button>
+            <button type="button" class="calc-key key-fn" data-action="m-plus">M+</button>
+            <button type="button" class="calc-key key-fn" data-action="m-minus">M-</button>
+            <button type="button" class="calc-key key-fn" data-val="(">(</button>
+
+            <!-- Row 2: Trig & Log -->
+            <button type="button" class="calc-key key-fn" data-val="sin(">sin</button>
+            <button type="button" class="calc-key key-fn" data-val="cos(">cos</button>
+            <button type="button" class="calc-key key-fn" data-val="tan(">tan</button>
+            <button type="button" class="calc-key key-fn" data-val="log10(">log</button>
+            <button type="button" class="calc-key key-fn" data-val=")">)</button>
+
+            <!-- Row 3: Powers & Roots -->
+            <button type="button" class="calc-key key-fn" data-val="^">x<sup>y</sup></button>
+            <button type="button" class="calc-key key-fn" data-val="^2">x<sup>2</sup></button>
+            <button type="button" class="calc-key key-fn" data-val="sqrt(">&radic;</button>
+            <button type="button" class="calc-key key-fn" data-val="ln(">ln</button>
+            <button type="button" class="calc-key key-fn" data-val="pi">&pi;</button>
+
+            <!-- Row 4: Digits 7,8,9, e, / -->
+            <button type="button" class="calc-key" data-val="7">7</button>
+            <button type="button" class="calc-key" data-val="8">8</button>
+            <button type="button" class="calc-key" data-val="9">9</button>
+            <button type="button" class="calc-key key-fn" data-val="e">e</button>
+            <button type="button" class="calc-key key-op" data-val="/">&divide;</button>
+
+            <!-- Row 5: Digits 4,5,6, Factorial, * -->
+            <button type="button" class="calc-key" data-val="4">4</button>
+            <button type="button" class="calc-key" data-val="5">5</button>
+            <button type="button" class="calc-key" data-val="6">6</button>
+            <button type="button" class="calc-key key-fn" data-val="!">n!</button>
+            <button type="button" class="calc-key key-op" data-val="*">&times;</button>
+
+            <!-- Row 6: Digits 1,2,3, Backspace, - -->
+            <button type="button" class="calc-key" data-val="1">1</button>
+            <button type="button" class="calc-key" data-val="2">2</button>
+            <button type="button" class="calc-key" data-val="3">3</button>
+            <button type="button" class="calc-key key-fn" data-action="backspace">&#9003;</button>
+            <button type="button" class="calc-key key-op" data-val="-">&minus;</button>
+
+            <!-- Row 7: AC, 0, ., %, + -->
+            <button type="button" class="calc-key key-clear" data-action="clear">AC</button>
+            <button type="button" class="calc-key" data-val="0">0</button>
+            <button type="button" class="calc-key" data-val=".">.</button>
+            <button type="button" class="calc-key key-fn" data-val="%">%</button>
+            <button type="button" class="calc-key key-op" data-val="+">+</button>
+
+            <!-- Row 8: Equal spanning full row -->
+            <button type="button" class="calc-key key-equal" data-action="calculate" style="grid-column: span 5;">=</button>
+          </div>
+        </div>
+
+        <!-- History on Right -->
+        <div class="history-card">
+          <div class="history-card-header">
+            <h3>History</h3>
+            <button type="button" class="btn-text-clear" id="clearSciHistoryBtn">Clear</button>
+          </div>
+          <ul class="history-items" id="sciHistoryList">
+            <li style="color: var(--text-muted); cursor: default;">No calculations yet.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content & SEO Sections -->
+    <article class="info-section">
+      <h2>How to Use the Scientific Calculator</h2>
+      <ol>
+        <li><strong>Trigonometry (Degrees):</strong> Press <code>sin</code>, <code>cos</code>, or <code>tan</code> followed by the angle in degrees, and close with <code>)</code>. For instance, <code>sin(30)</code> = 0.5.</li>
+        <li><strong>Powers and Exponents:</strong> Enter the base, click <code>x^y</code> (which inserts <code>^</code>), and enter the exponent. For squaring, click <code>x^2</code>.</li>
+        <li><strong>Roots:</strong> Press <code>&radic;</code> to insert <code>sqrt(</code>, enter the radicand, and close the bracket.</li>
+        <li><strong>Logarithms:</strong> Use <code>log</code> for common logarithms (base 10) or <code>ln</code> for natural logarithms (base <em>e</em>).</li>
+        <li><strong>Factorials:</strong> Enter a non-negative integer followed by <code>n!</code> to calculate factorials.</li>
+        <li><strong>Constants:</strong> Use the <code>&pi;</code> (&sim;3.14159) and <code>e</code> (&sim;2.71828) buttons directly in your formulas.</li>
+      </ol>
+
+      <h2>Mathematical Formulas &amp; Definitions</h2>
+      <p>The mathematical relationships governing the functions are detailed below:</p>
+      <div class="formula-display">
+Trigonometry (Deg) : sin(&theta;&deg;) = sin(&theta; &times; &pi; / 180 rad)
+Power              : x^y = x multiplied by itself y times
+Square Root        : &radic;x = x^(1/2), where x &ge; 0
+Common Logarithm   : log10(x) = y &hArr; 10^y = x
+Natural Logarithm  : ln(x) = y &hArr; e^y = x
+Factorial          : n! = n &times; (n - 1) &times; (n - 2) &times; ... &times; 1  (with 0! = 1)
+      </div>
+
+      <h2>Worked Examples</h2>
+      <div class="example-box">
+        <p><strong>Example 1 (Square Root):</strong> Calculate <code>&radic;16</code></p>
+        <p>Formula: <code>sqrt(16) = 4</code></p>
+        <hr style="margin: 0.75rem 0; border: none; border-top: 1px dashed var(--border);">
+        <p><strong>Example 2 (Degree Trigonometry):</strong> Calculate <code>sin(30&deg;)</code></p>
+        <p>Formula: <code>sin(30 &times; &pi; / 180) = sin(&pi;/6) = 0.5</code></p>
+        <hr style="margin: 0.75rem 0; border: none; border-top: 1px dashed var(--border);">
+        <p><strong>Example 3 (Exponentiation):</strong> Calculate <code>2^3</code></p>
+        <p>Formula: <code>2 &times; 2 &times; 2 = 8</code></p>
+        <hr style="margin: 0.75rem 0; border: none; border-top: 1px dashed var(--border);">
+        <p><strong>Example 4 (Common Logarithm):</strong> Calculate <code>log10(100)</code></p>
+        <p>Formula: <code>10^2 = 100 &rArr; log10(100) = 2</code></p>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-wrap">
+        <div class="faq-node">
+          <h3 class="faq-q">Are trigonometric functions evaluated in degrees or radians?</h3>
+          <p class="faq-a">By default and design, all trigonometric functions (sin, cos, tan) on OnlineCalculatorHub are calculated in degrees. For example, sin(30) calculates as 0.5.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">What is the difference between log10 and ln?</h3>
+          <p class="faq-a">log10 calculates the common logarithm with base 10 (e.g., log10(100) = 2). In contrast, ln calculates the natural logarithm using Euler's number e (approx 2.71828) as the base (e.g., ln(e) = 1).</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">How does the factorial (n!) function work?</h3>
+          <p class="faq-a">Factorial multiplies an integer by every positive integer below it. For example, 5! = 5 * 4 * 3 * 2 * 1 = 120. Factorials for negative numbers or non-integers return an Error.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">How do I calculate custom powers like 2^3?</h3>
+          <p class="faq-a">Use the x^y button to insert the exponentiation operator (^). For example, entering 2^3 and pressing '=' yields 8.</p>
+        </div>
+      </div>
+
+      <h2>Related Calculators</h2>
+      <div class="related-list">
+        <a href="index.html#standard" class="related-pill">
+          <div class="related-pill-title">Standard Calculator</div>
+          <div class="related-pill-desc">Everyday arithmetic, memory functions &amp; history.</div>
+        </a>
+        <a href="percentage.html" class="related-pill">
+          <div class="related-pill-title">Percentage Calculator</div>
+          <div class="related-pill-desc">Easily calculate proportions, changes, and markups.</div>
+        </a>
+        <a href="converter.html" class="related-pill">
+          <div class="related-pill-title">Unit Converter</div>
+          <div class="related-pill-desc">Quick conversions for length, mass, and volume.</div>
+        </a>
+        <a href="loan.html" class="related-pill">
+          <div class="related-pill-title">Loan / EMI Calculator</div>
+          <div class="related-pill-desc">Accurate loan payments and interest amortization.</div>
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <ul class="footer-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 OnlineCalculatorHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var display = document.getElementById('sciDisplay');
+      var historyDisplay = document.getElementById('sciHistoryDisplay');
+      var historyList = document.getElementById('sciHistoryList');
+      var clearHistoryBtn = document.getElementById('clearSciHistoryBtn');
+      var expression = '';
+      var memory = 0;
+      var lastCalculated = false;
+
+      function factorial(n) {
+        if (n < 0 || Math.floor(n) !== n) return NaN;
+        if (n === 0 || n === 1) return 1;
+        var res = 1;
+        for (var i = 2; i <= n; i++) {
+          res *= i;
+          if (!isFinite(res)) return Infinity;
+        }
+        return res;
+      }
+
+      function renderHistory() {
+        if (!window.CalcHistory) return;
+        var items = window.CalcHistory.load('scientific');
+        if (!items || items.length === 0) {
+          historyList.innerHTML = '<li style="color: var(--text-muted); cursor: default;">No calculations yet.</li>';
+          return;
+        }
+        historyList.innerHTML = items.map(function (item) {
+          return '<li data-res="' + item.res + '">' +
+            '<span>' + item.expr + '</span>' +
+            '<strong>= ' + item.res + '</strong>' +
+            '</li>';
+        }).join('');
+
+        var rows = historyList.querySelectorAll('li[data-res]');
+        rows.forEach(function (row) {
+          row.addEventListener('click', function () {
+            expression = row.getAttribute('data-res');
+            lastCalculated = false;
+            updateDisplay();
+          });
+        });
+      }
+
+      function updateDisplay() {
+        display.textContent = expression || '0';
+      }
+
+      function appendValue(val) {
+        if (lastCalculated && !['+', '-', '*', '/', '^'].includes(val)) {
+          expression = '';
+        }
+        lastCalculated = false;
+        expression += val;
+        updateDisplay();
+      }
+
+      function clearAll() {
+        expression = '';
+        historyDisplay.textContent = '';
+        lastCalculated = false;
+        updateDisplay();
+      }
+
+      function backspace() {
+        if (lastCalculated) {
+          clearAll();
+          return;
+        }
+        var fnPatterns = [/sin\($/, /cos\($/, /tan\($/, /sqrt\($/, /log10\($/, /ln\($/];
+        var matched = false;
+        for (var i = 0; i < fnPatterns.length; i++) {
+          if (fnPatterns[i].test(expression)) {
+            expression = expression.replace(fnPatterns[i], '');
+            matched = true;
+            break;
+          }
+        }
+        if (!matched) {
+          expression = expression.slice(0, -1);
+        }
+        updateDisplay();
+      }
+
+      function evaluateScientific(expr) {
+        if (!expr) return '0';
+        var s = expr;
+
+        var openCount = (s.match(/\(/g) || []).length;
+        var closeCount = (s.match(/\)/g) || []).length;
+        while (openCount > closeCount) {
+          s += ')';
+          closeCount++;
+        }
+
+        s = s.replace(/sin\(([^)]+)\)/g, function (m, a) { return '(Math.sin((' + a + ') * Math.PI / 180))'; });
+        s = s.replace(/cos\(([^)]+)\)/g, function (m, a) { return '(Math.cos((' + a + ') * Math.PI / 180))'; });
+        s = s.replace(/tan\(([^)]+)\)/g, function (m, a) { return '(Math.tan((' + a + ') * Math.PI / 180))'; });
+        s = s.replace(/sqrt\(([^)]+)\)/g, function (m, a) { return '(Math.sqrt(' + a + '))'; });
+        s = s.replace(/log10\(([^)]+)\)/g, function (m, a) { return '(Math.log10(' + a + '))'; });
+        s = s.replace(/ln\(([^)]+)\)/g, function (m, a) { return '(Math.log(' + a + '))'; });
+        s = s.replace(/(\d+)!/g, function (m, a) { return 'fact(' + a + ')'; });
+        s = s.replace(/\^/g, '**');
+        s = s.replace(/\bpi\b/g, 'Math.PI');
+        s = s.replace(/\be\b/g, 'Math.E');
+        s = s.replace(/(\d+(\.\d+)?)%/g, '($1/100)');
+
+        if (/\/0(?![0-9.])/g.test(s.replace(/\s+/g, ''))) {
+          return 'Error';
+        }
+
+        try {
+          var result = Function('fact', '"use strict"; return (' + s + ')')(factorial);
+          if (typeof result !== 'number' || !isFinite(result) || isNaN(result)) {
+            return 'Error';
+          }
+          var rounded = Number(Math.round(result + 'e+10') + 'e-10');
+          return rounded.toString();
+        } catch (err) {
+          return 'Error';
+        }
+      }
+
+      function calculate() {
+        if (!expression) return;
+        var original = expression;
+        var res = evaluateScientific(expression);
+
+        if (res === 'Error') {
+          historyDisplay.textContent = original + ' =';
+          display.textContent = 'Error';
+          expression = '';
+          lastCalculated = true;
+          return;
+        }
+
+        historyDisplay.textContent = original + ' =';
+        display.textContent = res;
+        if (window.CalcHistory) {
+          window.CalcHistory.save('scientific', original, res);
+          renderHistory();
+        }
+        expression = res;
+        lastCalculated = true;
+      }
+
+      function handleMemory(action) {
+        var currentVal = parseFloat(display.textContent);
+        if (isNaN(currentVal) && action !== 'mc') return;
+
+        if (action === 'mc') {
+          memory = 0;
+        } else if (action === 'mr') {
+          appendValue(memory.toString());
+        } else if (action === 'm-plus') {
+          memory += currentVal;
+          lastCalculated = true;
+        } else if (action === 'm-minus') {
+          memory -= currentVal;
+          lastCalculated = true;
+        }
+      }
+
+      document.querySelectorAll('.keypad-grid-5 .calc-key').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var val = btn.getAttribute('data-val');
+          var action = btn.getAttribute('data-action');
+
+          if (val !== null) {
+            appendValue(val);
+          } else if (action === 'calculate') {
+            calculate();
+          } else if (action === 'clear') {
+            clearAll();
+          } else if (action === 'backspace') {
+            backspace();
+          } else if (action && action.startsWith('m')) {
+            handleMemory(action);
+          }
+        });
+      });
+
+      if (clearHistoryBtn) {
+        clearHistoryBtn.addEventListener('click', function () {
+          if (window.CalcHistory) {
+            window.CalcHistory.clear('scientific');
+            renderHistory();
+          }
+        });
+      }
+
+      window.addEventListener('keydown', function (e) {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+        if ((e.key >= '0' && e.key <= '9') || ['+', '-', '*', '/', '.', '(', ')', '%', '^', '!'].includes(e.key)) {
+          e.preventDefault();
+          appendValue(e.key);
+        } else if (e.key === 'Enter' || e.key === '=') {
+          e.preventDefault();
+          calculate();
+        } else if (e.key === 'Backspace') {
+          e.preventDefault();
+          backspace();
+        } else if (e.key === 'Escape' || e.key.toLowerCase() === 'c') {
+          e.preventDefault();
+          clearAll();
+        }
+      });
+
+      renderHistory();
+    })();
+  </script>
+</body>
+</html>

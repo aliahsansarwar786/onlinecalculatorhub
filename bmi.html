@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator - Accurate Body Mass Index | OnlineCalculatorHub</title>
+  <meta name="description" content="Calculate your Body Mass Index (BMI) using metric (kg/cm) or imperial (lb/ft/in) units. View official WHO weight categories and healthy weight ranges.">
+  <link rel="canonical" href="https://onlinecalculatorhub.site/bmi.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='2' width='16' height='20' rx='2'/%3E%3Cline x1='8' y1='6' x2='16' y2='6'/%3E%3Cline x1='16' y1='14' x2='16' y2='18'/%3E%3Cpath d='M16 10h.01'/%3E%3Cpath d='M12 10h.01'/%3E%3Cpath d='M8 10h.01'/%3E%3Cpath d='M12 14h.01'/%3E%3Cpath d='M8 14h.01'/%3E%3Cpath d='M12 18h.01'/%3E%3Cpath d='M8 18h.01'/%3E%3C/svg%3E">
+  <meta property="og:title" content="BMI Calculator - Accurate Body Mass Index | OnlineCalculatorHub">
+  <meta property="og:description" content="Free online Body Mass Index calculator with metric and imperial units based on WHO standards.">
+  <meta property="og:url" content="https://onlinecalculatorhub.site/bmi.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OnlineCalculatorHub">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OnlineCalculatorHub BMI Calculator",
+    "url": "https://onlinecalculatorhub.site/bmi.html",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "description": "Calculates Body Mass Index (BMI) using height and weight under WHO classification standards."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is considered a healthy BMI score?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "According to the World Health Organization (WHO), a BMI between 18.5 and 24.9 is categorized as normal or healthy weight for adults."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does BMI differentiate between muscle mass and body fat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, standard BMI calculates overall mass relative to height and does not distinguish between muscle tissue, bone density, and excess adipose body fat. Athletes may register higher BMI values despite low body fat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the formula for calculating BMI in imperial units?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In imperial units, BMI is calculated as: BMI = (weight in pounds / (height in inches squared)) * 703."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this BMI calculation medical advice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The BMI calculator provides an informational estimate only. Always consult a licensed medical professional for personal clinical diagnostics or nutritional recommendations."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="OnlineCalculatorHub Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="8" y1="6" x2="16" y2="6"></line>
+            <line x1="16" y1="14" x2="16" y2="18"></line>
+            <path d="M16 10h.01"></path>
+            <path d="M12 10h.01"></path>
+            <path d="M8 10h.01"></path>
+            <path d="M12 14h.01"></path>
+            <path d="M8 14h.01"></path>
+            <path d="M12 18h.01"></path>
+            <path d="M8 18h.01"></path>
+          </svg>
+        </div>
+        <span class="brand-title">OnlineCalculatorHub</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-icon"><span></span><span></span><span></span></span>
+        <span class="nav-toggle-text">Menu</span>
+      </button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Home</span></a></li>
+          <li><a href="index.html#standard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path></svg><span>Standard</span></a></li>
+          <li><a href="scientific.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19L9 5M15 5l5 14M9 12h6"></path></svg><span>Scientific</span></a></li>
+          <li><a href="percentage.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg><span>Percentage</span></a></li>
+          <li><a href="bmi.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg><span>BMI</span></a></li>
+          <li><a href="age.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Age</span></a></li>
+          <li><a href="loan.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg><span>Loan</span></a></li>
+          <li><a href="salary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v12M15 9.5a3.5 3.5 0 0 0-6 0c0 3 6 2 6 5a3.5 3.5 0 0 1-6 0"></path></svg><span>Salary</span></a></li>
+          <li><a href="zakat.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><span>Zakat</span></a></li>
+          <li><a href="converter.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg><span>Converter</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="page-intro">
+      <h1>BMI Calculator</h1>
+      <p class="page-subtitle">Calculate your Body Mass Index based on your height and weight.</p>
+    </div>
+
+    <!-- Panel 4 Layout with Green Result Box -->
+    <section class="tool-card" aria-label="Interactive BMI Calculator">
+      <div class="tabs-bar" role="tablist">
+        <button type="button" class="tab-pill active" id="tabMetric" role="tab" aria-selected="true">Metric (kg/cm)</button>
+        <button type="button" class="tab-pill" id="tabImperial" role="tab" aria-selected="false">Imperial (lb/ft-in)</button>
+      </div>
+
+      <!-- Metric Inputs -->
+      <div id="metricFields" class="form-grid-2">
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="weightKg">Weight (kg)</label>
+          <input type="number" step="0.1" class="input-field" id="weightKg" value="70" placeholder="e.g. 70">
+        </div>
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="heightCm">Height (cm)</label>
+          <input type="number" step="0.1" class="input-field" id="heightCm" value="175" placeholder="e.g. 175">
+        </div>
+      </div>
+
+      <!-- Imperial Inputs -->
+      <div id="imperialFields" class="form-grid-2" style="display: none;">
+        <div class="form-group" style="margin-bottom: 0;">
+          <label for="weightLb">Weight (lbs)</label>
+          <input type="number" step="0.1" class="input-field" id="weightLb" value="154" placeholder="e.g. 154">
+        </div>
+        <div class="form-group" style="margin-bottom: 0;">
+          <label>Height (Feet &amp; Inches)</label>
+          <div style="display: flex; gap: 0.5rem;">
+            <input type="number" class="input-field" id="heightFt" value="5" placeholder="ft">
+            <input type="number" step="0.1" class="input-field" id="heightIn" value="9" placeholder="in">
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="btn-primary" id="calculateBmiBtn" style="margin-bottom: 1.25rem;">Calculate</button>
+
+      <!-- GREEN Result Box matching Panel 4 in Reference Image -->
+      <div class="result-box-green">
+        <div class="result-tag" style="color: var(--green-text);">Your Body Mass Index</div>
+        <div class="result-main" style="color: var(--green-bold);" id="bmiValueDisplay">BMI: 22.9</div>
+        <p class="result-sub" id="bmiSummaryText" style="color: var(--green-text);">Category: Normal</p>
+        <ul class="result-list" style="border-top-color: rgba(22, 101, 52, 0.2);">
+          <li class="result-row">
+            <span class="result-row-label">WHO Classification</span>
+            <span class="result-row-val" id="whoCategoryValue">Normal (18.5 &ndash; 24.9)</span>
+          </li>
+          <li class="result-row">
+            <span class="result-row-label">Healthy Weight Range</span>
+            <span class="result-row-val" id="healthyRangeValue">56.7 &ndash; 76.3 kg</span>
+          </li>
+          <li class="result-row">
+            <span class="result-row-label">Applied Formula</span>
+            <span class="result-row-val" id="formulaUsedText">70 / (1.75)&sup2; = 22.86</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Content & SEO Sections -->
+    <article class="info-section">
+      <h2>How to Use the BMI Calculator</h2>
+      <ol>
+        <li><strong>Select Measurement System:</strong> Choose between Metric (centimetres and kilograms) or Imperial (feet, inches, and pounds).</li>
+        <li><strong>Enter Height and Weight:</strong> Input your accurate current measurements in the respective fields.</li>
+        <li><strong>View Your Result:</strong> The tool instantly displays your exact BMI number, current WHO classification category, and recommended healthy weight span.</li>
+      </ol>
+
+      <h2>Mathematical Formulas for BMI</h2>
+      <p>Body Mass Index is calculated using the following standard medical formulas:</p>
+      <div class="formula-display">
+Metric System   : BMI = weight (kg) / [height (m)]&sup2;
+Imperial System : BMI = [weight (lb) / (height (in))&sup2;] &times; 703
+      </div>
+
+      <h2>WHO Weight Classification Table</h2>
+      <div class="table-responsive">
+        <table class="calc-table">
+          <thead>
+            <tr>
+              <th>Classification Category</th>
+              <th>BMI Range (kg/m&sup2;)</th>
+              <th>Health Risk Profile</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Underweight</td>
+              <td>&lt; 18.5</td>
+              <td>Nutritional deficiency risk</td>
+            </tr>
+            <tr>
+              <td>Normal Weight</td>
+              <td>18.5 &ndash; 24.9</td>
+              <td>Lowest average health risk</td>
+            </tr>
+            <tr>
+              <td>Overweight</td>
+              <td>25.0 &ndash; 29.9</td>
+              <td>Elevated cardiovascular risk</td>
+            </tr>
+            <tr>
+              <td>Obese</td>
+              <td>&ge; 30.0</td>
+              <td>High to extreme health risk</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Worked Example</h2>
+      <div class="example-box">
+        <p><strong>Input Parameters:</strong> Weight = 70 kg, Height = 175 cm (1.75 m)</p>
+        <p><strong>Step 1:</strong> Square the height in metres: <code>1.75 &times; 1.75 = 3.0625 m&sup2;</code></p>
+        <p><strong>Step 2:</strong> Divide weight by squared height: <code>70 / 3.0625 &approx; 22.857 kg/m&sup2;</code></p>
+        <p><strong>Result:</strong> Rounded to one decimal place, the BMI is <strong>22.9</strong>, placing the individual safely within the <strong>Normal</strong> weight category (18.5 &ndash; 24.9).</p>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-wrap">
+        <div class="faq-node">
+          <h3 class="faq-q">What is considered a healthy BMI score?</h3>
+          <p class="faq-a">According to the World Health Organization (WHO), a BMI between 18.5 and 24.9 is categorized as normal or healthy weight for adults.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">Does BMI differentiate between muscle mass and body fat?</h3>
+          <p class="faq-a">No, standard BMI calculates overall mass relative to height and does not distinguish between muscle tissue, bone density, and excess adipose body fat. Athletes may register higher BMI values despite low body fat.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">What is the formula for calculating BMI in imperial units?</h3>
+          <p class="faq-a">In imperial units, BMI is calculated as: BMI = (weight in pounds / (height in inches squared)) * 703.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">Is this BMI calculation medical advice?</h3>
+          <p class="faq-a">No. The BMI calculator provides an informational estimate only. Always consult a licensed medical professional for personal clinical diagnostics or nutritional recommendations.</p>
+        </div>
+      </div>
+
+      <h2>Related Calculators</h2>
+      <div class="related-list">
+        <a href="age.html" class="related-pill">
+          <div class="related-pill-title">Age Calculator</div>
+          <div class="related-pill-desc">Find your precise chronological age in years, months, and days.</div>
+        </a>
+        <a href="converter.html" class="related-pill">
+          <div class="related-pill-title">Unit Converter</div>
+          <div class="related-pill-desc">Convert units of weight, length, and temperature.</div>
+        </a>
+        <a href="percentage.html" class="related-pill">
+          <div class="related-pill-title">Percentage Calculator</div>
+          <div class="related-pill-desc">Compute proportions and body metric percentage changes.</div>
+        </a>
+        <a href="salary.html" class="related-pill">
+          <div class="related-pill-title">Salary Calculator</div>
+          <div class="related-pill-desc">Convert hourly rates into gross weekly, monthly, and annual wages.</div>
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <ul class="footer-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 OnlineCalculatorHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var tabMetric = document.getElementById('tabMetric');
+      var tabImperial = document.getElementById('tabImperial');
+      var metricFields = document.getElementById('metricFields');
+      var imperialFields = document.getElementById('imperialFields');
+      var isMetric = true;
+
+      tabMetric.addEventListener('click', function () {
+        isMetric = true;
+        tabMetric.classList.add('active');
+        tabMetric.setAttribute('aria-selected', 'true');
+        tabImperial.classList.remove('active');
+        tabImperial.setAttribute('aria-selected', 'false');
+        metricFields.style.display = 'grid';
+        imperialFields.style.display = 'none';
+        calculateBMI();
+      });
+
+      tabImperial.addEventListener('click', function () {
+        isMetric = false;
+        tabImperial.classList.add('active');
+        tabImperial.setAttribute('aria-selected', 'true');
+        tabMetric.classList.remove('active');
+        tabMetric.setAttribute('aria-selected', 'false');
+        imperialFields.style.display = 'grid';
+        metricFields.style.display = 'none';
+        calculateBMI();
+      });
+
+      function calculateBMI() {
+        var weightKg = 0;
+        var heightM = 0;
+        var formulaString = '';
+
+        if (isMetric) {
+          var hCm = parseFloat(document.getElementById('heightCm').value);
+          var wKg = parseFloat(document.getElementById('weightKg').value);
+          if (isNaN(hCm) || isNaN(wKg) || hCm <= 0 || wKg <= 0) return;
+
+          heightM = hCm / 100;
+          weightKg = wKg;
+          var bmiRaw = weightKg / (heightM * heightM);
+          formulaString = wKg + ' / (' + heightM.toFixed(2) + ')\u00B2 = ' + bmiRaw.toFixed(2);
+        } else {
+          var ft = parseFloat(document.getElementById('heightFt').value) || 0;
+          var inches = parseFloat(document.getElementById('heightIn').value) || 0;
+          var wLb = parseFloat(document.getElementById('weightLb').value);
+          var totalInches = (ft * 12) + inches;
+
+          if (totalInches <= 0 || isNaN(wLb) || wLb <= 0) return;
+
+          heightM = totalInches * 0.0254;
+          weightKg = wLb * 0.45359237;
+          var bmiRaw = (wLb / (totalInches * totalInches)) * 703;
+          formulaString = '(' + wLb + ' / ' + totalInches + '\u00B2) \u00D7 703 = ' + bmiRaw.toFixed(2);
+        }
+
+        var bmi = Number(bmiRaw.toFixed(1));
+        document.getElementById('bmiValueDisplay').textContent = 'BMI: ' + bmi.toFixed(1);
+        document.getElementById('formulaUsedText').textContent = formulaString;
+
+        var summary = document.getElementById('bmiSummaryText');
+        var whoCategory = document.getElementById('whoCategoryValue');
+
+        if (bmi < 18.5) {
+          whoCategory.textContent = 'Underweight (< 18.5)';
+          summary.textContent = 'Category: Underweight';
+        } else if (bmi <= 24.9) {
+          whoCategory.textContent = 'Normal (18.5 \u2013 24.9)';
+          summary.textContent = 'Category: Normal';
+        } else if (bmi <= 29.9) {
+          whoCategory.textContent = 'Overweight (25.0 \u2013 29.9)';
+          summary.textContent = 'Category: Overweight';
+        } else {
+          whoCategory.textContent = 'Obese (\u2265 30.0)';
+          summary.textContent = 'Category: Obese';
+        }
+
+        var minHealthyKg = 18.5 * (heightM * heightM);
+        var maxHealthyKg = 24.9 * (heightM * heightM);
+
+        if (isMetric) {
+          document.getElementById('healthyRangeValue').textContent =
+            minHealthyKg.toFixed(1) + ' \u2013 ' + maxHealthyKg.toFixed(1) + ' kg';
+        } else {
+          var minHealthyLb = minHealthyKg * 2.20462;
+          var maxHealthyLb = maxHealthyKg * 2.20462;
+          document.getElementById('healthyRangeValue').textContent =
+            minHealthyLb.toFixed(1) + ' \u2013 ' + maxHealthyLb.toFixed(1) + ' lbs';
+        }
+      }
+
+      ['heightCm', 'weightKg', 'heightFt', 'heightIn', 'weightLb'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.addEventListener('input', calculateBMI);
+      });
+
+      document.getElementById('calculateBmiBtn').addEventListener('click', calculateBMI);
+      calculateBMI();
+    })();
+  </script>
+</body>
+</html>

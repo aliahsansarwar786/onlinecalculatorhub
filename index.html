@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnlineCalculatorHub - All Your Calculations in One Place | Free Online Calculators</title>
+  <meta name="description" content="Simple, fast and easy-to-use online calculators for everyday needs. Standard, scientific, percentage, BMI, age, loan, salary, zakat, and unit converters.">
+  <link rel="canonical" href="https://onlinecalculatorhub.site/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='2' width='16' height='20' rx='2'/%3E%3Cline x1='8' y1='6' x2='16' y2='6'/%3E%3Cline x1='16' y1='14' x2='16' y2='18'/%3E%3Cpath d='M16 10h.01'/%3E%3Cpath d='M12 10h.01'/%3E%3Cpath d='M8 10h.01'/%3E%3Cpath d='M12 14h.01'/%3E%3Cpath d='M8 14h.01'/%3E%3Cpath d='M12 18h.01'/%3E%3Cpath d='M8 18h.01'/%3E%3C/svg%3E">
+  <meta property="og:title" content="OnlineCalculatorHub - All Your Calculations in One Place">
+  <meta property="og:description" content="Simple, fast, and free online calculators for everyday math, finance, health, and conversions.">
+  <meta property="og:url" content="https://onlinecalculatorhub.site/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OnlineCalculatorHub">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OnlineCalculatorHub Standard Calculator",
+    "url": "https://onlinecalculatorhub.site/",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "description": "Free online calculators for everyday arithmetic, percentages, finances, loans, and health metrics."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does the standard calculator handle division by zero?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dividing any number by zero is mathematically undefined. The calculator instantly displays an 'Error' message and allows you to clear the display or start a new calculation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use my physical computer keyboard with this calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, full keyboard support is active. You can type digits 0-9, arithmetic operators (+, -, *, /), decimal point (.), parentheses, Enter or = to calculate, Backspace to delete, and Escape to clear all."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do the memory buttons (MC, MR, M+, M-) work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "M+ adds the current number to stored memory, M- subtracts it, MR recalls the stored value into your calculation, and MC resets the stored memory to zero."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is my calculation history stored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "History is saved solely in your local browser storage. No calculation entries or user data are ever uploaded to any web server or database."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="OnlineCalculatorHub Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="8" y1="6" x2="16" y2="6"></line>
+            <line x1="16" y1="14" x2="16" y2="18"></line>
+            <path d="M16 10h.01"></path>
+            <path d="M12 10h.01"></path>
+            <path d="M8 10h.01"></path>
+            <path d="M12 14h.01"></path>
+            <path d="M8 14h.01"></path>
+            <path d="M12 18h.01"></path>
+            <path d="M8 18h.01"></path>
+          </svg>
+        </div>
+        <span class="brand-title">OnlineCalculatorHub</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-icon"><span></span><span></span><span></span></span>
+        <span class="nav-toggle-text">Menu</span>
+      </button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Home</span></a></li>
+          <li><a href="#standard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path></svg><span>Standard</span></a></li>
+          <li><a href="scientific.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19L9 5M15 5l5 14M9 12h6"></path></svg><span>Scientific</span></a></li>
+          <li><a href="percentage.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg><span>Percentage</span></a></li>
+          <li><a href="bmi.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg><span>BMI</span></a></li>
+          <li><a href="age.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Age</span></a></li>
+          <li><a href="loan.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg><span>Loan</span></a></li>
+          <li><a href="salary.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v12M15 9.5a3.5 3.5 0 0 0-6 0c0 3 6 2 6 5a3.5 3.5 0 0 1-6 0"></path></svg><span>Salary</span></a></li>
+          <li><a href="zakat.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><span>Zakat</span></a></li>
+          <li><a href="converter.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg><span>Converter</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <!-- Panel 1: Home Hero with Prominent 3D Calculator Visual -->
+    <section class="home-hero">
+      <div class="hero-content">
+        <div class="hero-pill-badge">
+          <span>⚡</span> 100% Client-Side &bull; Private &amp; Fast &bull; Zero Sign-Up
+        </div>
+        <h1>OnlineCalculatorHub</h1>
+        <p class="hero-subheading">All Your Calculations in One Place</p>
+        <p class="hero-description">Simple, fast and easy-to-use online calculators for everyday needs. No installation. No sign up. Just calculate.</p>
+        <div class="hero-actions">
+          <a href="#calculators" class="btn-hero-primary">
+            <span>Explore All Calculators</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <a href="#standard" class="btn-hero-secondary">
+            <span>Open Standard Calc</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <div class="hero-visual-card">
+          <div class="hero-floating-chip chip-top-left">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>100% Client-Side</span>
+          </div>
+          <img src="hero-calculator.png" alt="OnlineCalculatorHub 3D Smart Calculator Illustration" class="hero-calc-img" width="480" height="480" loading="eager">
+          <div class="hero-floating-chip chip-bottom-right">
+            <span>⚡ Instant Results</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 Calculator Cards matching Panel 1 in Reference Image -->
+    <div class="section-title-wrap" id="calculators">
+      <span class="section-badge">Fast &amp; Accurate</span>
+      <h2 class="section-title">Explore Our Calculators</h2>
+    </div>
+
+    <section class="cards-grid" aria-label="Calculator Directory">
+      <a href="#standard" class="calc-card-item">
+        <div class="card-top-row">
+          <div class="card-icon-wrap icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+              <line x1="8" y1="6" x2="16" y2="6"></line>
+              <line x1="16" y1="14" x2="16" y2="18"></line>
+              <path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path>
+            </svg>
+          </div>
+          <span class="card-tag">Basic Math</span>
+        </div>
+        <span class="calc-card-title">Standard Calculator</span>
+        <span class="calc-card-desc">Everyday arithmetic, parenthetical grouping, memory (MC/MR/M+/M-) &amp; local history.</span>
+        <span class="card-action-link">
+          <span>Open Calculator</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </a>
+
+      <a href="scientific.html" class="calc-card-item">
+        <div class="card-top-row">
+          <div class="card-icon-wrap icon-purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19L9 5M15 5l5 14M9 12h6"></path>
+            </svg>
+          </div>
+          <span class="card-tag">Advanced Math</span>
+        </div>
+        <span class="calc-card-title">Scientific Calculator</span>
+        <span class="calc-card-desc">Trigonometry (sin, cos, tan in DEG/RAD), exponents, square roots, logs, factorial &amp; constants.</span>
+        <span class="card-action-link">
+          <span>Open Calculator</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </a>
+
+      <a href="percentage.html" class="calc-card-item">
+        <div class="card-top-row">
+          <div class="card-icon-wrap icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="5" x2="5" y2="19"></line>
+              <circle cx="6.5" cy="6.5" r="2.5"></circle>
+              <circle cx="17.5" cy="17.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <span class="card-tag">Finance &amp; Math</span>
+        </div>
+        <span class="calc-card-title">Percentage Calculator</span>
+        <span class="calc-card-desc">Find percentage of a value, calculate ratios &amp; determine percentage increases or decreases.</span>
+        <span class="card-action-link">
+          <span>Open Calculator</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </a>
+
+      <a href="bmi.html" class="calc-card-item">
+        <div class="card-top-row">
+          <div class="card-icon-wrap icon-cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path>
+            </svg>
+          </div>
+          <span class="card-tag">Health &amp; Fitness</span>
+        </div>
+        <span class="calc-card-title">BMI Calculator</span>
+        <span class="calc-card-desc">Calculate Body Mass Index using metric or imperial units with official WHO weight categories.</span>
+        <span class="card-action-link">
+          <span>Open Calculator</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </a>
+
+      <a href="age.html" class="calc-card-item">
+        <div class="card-top-row">
+          <div class="card-icon-wrap icon-orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <span class="card-tag">Date &amp; Time</span>
+        </div>
+        <span class="calc-card-title">Age Calculator</span>
+        <span class="calc-card-desc">Calculate exact age in years, months, and days, total days lived, and countdown to upcoming birthday.</span>
+        <span class="card-action-link">
+          <span>Open Calculator</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </a>
+
+      <a href="loan.html" class="calc-card-item">
+        <div class="card-top-row">
+          <div class="card-icon-wrap icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+              <line x1="2" y1="10" x2="22" y2="10"></line>
+            </svg>
+          </div>
+          <span class="card-tag">Banking &amp; Loans</span>
+        </div>
+        <span class="calc-card-title">Loan / EMI Calculator</span>
+        <span class="calc-card-desc">Calculate monthly EMI installments, total interest, total repayment, and complete yearly amortization.</span>
+        <span class="card-action-link">
+          <span>Open Calculator</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </a>
+
+      <a href="salary.html" class="calc-card-item">
+        <div class="card-top-row">
+          <div class="card-icon-wrap icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 6v12M15 9.5a3.5 3.5 0 0 0-6 0c0 3 6 2 6 5a3.5 3.5 0 0 1-6 0"></path>
+            </svg>
+          </div>
+          <span class="card-tag">Income &amp; Wages</span>
+        </div>
+        <span class="calc-card-title">Salary Calculator</span>
+        <span class="calc-card-desc">Convert hourly wage into weekly, monthly, and yearly gross income before taxes.</span>
+        <span class="card-action-link">
+          <span>Open Calculator</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </a>
+
+      <a href="zakat.html" class="calc-card-item">
+        <div class="card-top-row">
+          <div class="card-icon-wrap icon-amber">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+          </div>
+          <span class="card-tag">Islamic Wealth</span>
+        </div>
+        <span class="calc-card-title">Zakat Calculator</span>
+        <span class="calc-card-desc">Calculate 2.5% obligatory Zakat on total net wealth against current customizable gold/silver nisab.</span>
+        <span class="card-action-link">
+          <span>Open Calculator</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </a>
+
+      <a href="converter.html" class="calc-card-item">
+        <div class="card-top-row">
+          <div class="card-icon-wrap icon-teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="17 1 21 5 17 9"></polyline>
+              <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+              <polyline points="7 23 3 19 7 15"></polyline>
+              <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+            </svg>
+          </div>
+          <span class="card-tag">Measurement</span>
+        </div>
+        <span class="calc-card-title">Unit Converter</span>
+        <span class="calc-card-desc">Instant bidirectional conversions for length, weight, temperature, volume, and area units.</span>
+        <span class="card-action-link">
+          <span>Open Calculator</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </a>
+    </section>
+
+    <!-- Standard Calculator Tool on Home Page (anchored at #standard) -->
+    <section id="standard" class="tool-card" aria-label="Interactive Standard Calculator">
+      <div class="page-intro" style="margin-bottom: 1.25rem;">
+        <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem;">Standard Online Calculator</h2>
+        <p class="page-subtitle">Perform everyday math operations with precision. Includes memory functions, parenthetical grouping, and instant history recall.</p>
+      </div>
+
+      <div class="calc-split">
+        <div class="keypad-wrapper">
+          <div class="keypad-screen">
+            <div class="keypad-expr" id="calcHistoryDisplay" aria-live="polite"></div>
+            <div class="keypad-val" id="calcDisplay" aria-live="assertive">0</div>
+          </div>
+
+          <div class="keypad-grid-4">
+            <!-- Memory Keys -->
+            <button type="button" class="calc-key key-fn" data-action="mc" aria-label="Memory Clear">MC</button>
+            <button type="button" class="calc-key key-fn" data-action="mr" aria-label="Memory Recall">MR</button>
+            <button type="button" class="calc-key key-fn" data-action="m-plus" aria-label="Memory Add">M+</button>
+            <button type="button" class="calc-key key-fn" data-action="m-minus" aria-label="Memory Subtract">M-</button>
+
+            <!-- Row 1: Clear, Brackets, Divide -->
+            <button type="button" class="calc-key key-clear" data-action="clear" aria-label="All Clear">AC</button>
+            <button type="button" class="calc-key key-fn" data-val="(" aria-label="Open parenthesis">(</button>
+            <button type="button" class="calc-key key-fn" data-val=")" aria-label="Close parenthesis">)</button>
+            <button type="button" class="calc-key key-op" data-val="/" aria-label="Divide">&divide;</button>
+
+            <!-- Row 2: 7, 8, 9, Multiply -->
+            <button type="button" class="calc-key" data-val="7">7</button>
+            <button type="button" class="calc-key" data-val="8">8</button>
+            <button type="button" class="calc-key" data-val="9">9</button>
+            <button type="button" class="calc-key key-op" data-val="*" aria-label="Multiply">&times;</button>
+
+            <!-- Row 3: 4, 5, 6, Minus -->
+            <button type="button" class="calc-key" data-val="4">4</button>
+            <button type="button" class="calc-key" data-val="5">5</button>
+            <button type="button" class="calc-key" data-val="6">6</button>
+            <button type="button" class="calc-key key-op" data-val="-" aria-label="Minus">&minus;</button>
+
+            <!-- Row 4: 1, 2, 3, Plus -->
+            <button type="button" class="calc-key" data-val="1">1</button>
+            <button type="button" class="calc-key" data-val="2">2</button>
+            <button type="button" class="calc-key" data-val="3">3</button>
+            <button type="button" class="calc-key key-op" data-val="+" aria-label="Plus">+</button>
+
+            <!-- Row 5: 0, Decimal, Backspace, Equals -->
+            <button type="button" class="calc-key" data-val="0">0</button>
+            <button type="button" class="calc-key" data-val=".">.</button>
+            <button type="button" class="calc-key key-fn" data-action="backspace" aria-label="Backspace">&#9003;</button>
+            <button type="button" class="calc-key key-equal" data-action="calculate" aria-label="Calculate">=</button>
+          </div>
+        </div>
+
+        <!-- History on Right -->
+        <div class="history-card">
+          <div class="history-card-header">
+            <h3>Calculation History</h3>
+            <button type="button" class="btn-text-clear" id="clearHistoryBtn">Clear</button>
+          </div>
+          <ul class="history-items" id="calcHistoryList">
+            <li style="color: var(--text-muted); cursor: default;">No calculations yet.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content & SEO Sections -->
+    <article class="info-section">
+      <h2>How to Use the Standard Calculator</h2>
+      <ol>
+        <li><strong>Enter Numbers:</strong> Click the numeric buttons (0 through 9) or type directly on your physical keyboard.</li>
+        <li><strong>Select Operations:</strong> Choose an arithmetic operator: addition (+), subtraction (&minus;), multiplication (&times;), or division (&divide;).</li>
+        <li><strong>Use Parentheses:</strong> Use "(" and ")" to group sub-expressions and control operator precedence.</li>
+        <li><strong>Compute Result:</strong> Press the "=" button or hit Enter on your keyboard to evaluate the calculation.</li>
+        <li><strong>Memory Operations:</strong> Use <em>M+</em> and <em>M-</em> to accumulate values, <em>MR</em> to recall the stored number, and <em>MC</em> to reset memory to zero.</li>
+      </ol>
+
+      <h2>Mathematical Formula &amp; Order of Operations</h2>
+      <p>Calculations adhere strictly to standard arithmetic order of operations, widely known as <strong>BODMAS / PEMDAS</strong>:</p>
+      <div class="formula-display">
+B / P : Brackets / Parentheses (evaluated first from inside out)
+O / E : Orders / Exponents
+D / M : Division and Multiplication (evaluated left to right)
+A / S : Addition and Subtraction (evaluated left to right)
+      </div>
+      <p>Division by zero is undefined. In such instances, the calculator halts and outputs <code>Error</code>.</p>
+
+      <h2>Worked Example</h2>
+      <div class="example-box">
+        <p><strong>Problem:</strong> Evaluate the expression <code>(15 + 25) &times; 2 &minus; 10 &divide; 2</code></p>
+        <p><strong>Step 1 (Parentheses):</strong> <code>15 + 25 = 40</code></p>
+        <p><strong>Step 2 (Multiplication &amp; Division):</strong> <code>40 &times; 2 = 80</code> and <code>10 &divide; 2 = 5</code></p>
+        <p><strong>Step 3 (Subtraction):</strong> <code>80 &minus; 5 = 75</code></p>
+        <p><strong>Final Result:</strong> <code>75</code></p>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-wrap">
+        <div class="faq-node">
+          <h3 class="faq-q">How does the standard calculator handle division by zero?</h3>
+          <p class="faq-a">Dividing any number by zero is mathematically undefined. The calculator instantly displays an 'Error' message and allows you to clear the display or start a new calculation.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">Can I use my physical computer keyboard with this calculator?</h3>
+          <p class="faq-a">Yes, full keyboard support is active. You can type digits 0-9, arithmetic operators (+, -, *, /), decimal point (.), parentheses, Enter or = to calculate, Backspace to delete, and Escape to clear all.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">How do the memory buttons (MC, MR, M+, M-) work?</h3>
+          <p class="faq-a">M+ adds the current number to stored memory, M- subtracts it, MR recalls the stored value into your calculation, and MC resets the stored memory to zero.</p>
+        </div>
+        <div class="faq-node">
+          <h3 class="faq-q">Where is my calculation history stored?</h3>
+          <p class="faq-a">History is saved solely in your local browser storage. No calculation entries or user data are ever uploaded to any web server or database.</p>
+        </div>
+      </div>
+
+      <h2>Related Calculators</h2>
+      <div class="related-list">
+        <a href="scientific.html" class="related-pill">
+          <div class="related-pill-title">Scientific Calculator</div>
+          <div class="related-pill-desc">Trigonometric functions, logarithms, roots, and factorials.</div>
+        </a>
+        <a href="percentage.html" class="related-pill">
+          <div class="related-pill-title">Percentage Calculator</div>
+          <div class="related-pill-desc">Calculate percentage increases, discounts, and proportions.</div>
+        </a>
+        <a href="loan.html" class="related-pill">
+          <div class="related-pill-title">Loan / EMI Calculator</div>
+          <div class="related-pill-desc">Compute monthly payments, total interest, and summaries.</div>
+        </a>
+        <a href="converter.html" class="related-pill">
+          <div class="related-pill-title">Unit Converter</div>
+          <div class="related-pill-desc">Convert units of length, weight, volume, and area.</div>
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <ul class="footer-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 OnlineCalculatorHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var display = document.getElementById('calcDisplay');
+      var historyDisplay = document.getElementById('calcHistoryDisplay');
+      var historyList = document.getElementById('calcHistoryList');
+      var clearHistoryBtn = document.getElementById('clearHistoryBtn');
+      var expression = '';
+      var memory = 0;
+      var lastCalculated = false;
+
+      function renderHistory() {
+        if (!window.CalcHistory) return;
+        var items = window.CalcHistory.load('standard');
+        if (!items || items.length === 0) {
+          historyList.innerHTML = '<li style="color: var(--text-muted); cursor: default;">No calculations yet.</li>';
+          return;
+        }
+        historyList.innerHTML = items.map(function (item) {
+          return '<li data-res="' + item.res + '">' +
+            '<span>' + item.expr + '</span>' +
+            '<strong>= ' + item.res + '</strong>' +
+            '</li>';
+        }).join('');
+
+        var rows = historyList.querySelectorAll('li[data-res]');
+        rows.forEach(function (row) {
+          row.addEventListener('click', function () {
+            expression = row.getAttribute('data-res');
+            lastCalculated = false;
+            updateDisplay();
+          });
+        });
+      }
+
+      function updateDisplay() {
+        display.textContent = expression || '0';
+      }
+
+      function appendValue(val) {
+        if (lastCalculated && !['+', '-', '*', '/', '%'].includes(val)) {
+          expression = '';
+        }
+        lastCalculated = false;
+
+        var lastChar = expression.slice(-1);
+        var ops = ['+', '-', '*', '/', '%'];
+        if (ops.includes(val) && ops.includes(lastChar)) {
+          expression = expression.slice(0, -1) + val;
+        } else {
+          expression += val;
+        }
+        updateDisplay();
+      }
+
+      function clearAll() {
+        expression = '';
+        historyDisplay.textContent = '';
+        lastCalculated = false;
+        updateDisplay();
+      }
+
+      function backspace() {
+        if (lastCalculated) {
+          clearAll();
+          return;
+        }
+        expression = expression.slice(0, -1);
+        updateDisplay();
+      }
+
+      function evaluateExpression(expr) {
+        var sanitized = expr.replace(/×/g, '*').replace(/÷/g, '/');
+        if (!/^[0-9+\-*/().%\s]+$/.test(sanitized)) {
+          return 'Error';
+        }
+        sanitized = sanitized.replace(/(\d+(\.\d+)?)%/g, '($1/100)');
+        if (/\/0(?![0-9.])/g.test(sanitized.replace(/\s+/g, ''))) {
+          return 'Error';
+        }
+
+        try {
+          var result = Function('"use strict"; return (' + sanitized + ')')();
+          if (typeof result !== 'number' || !isFinite(result)) {
+            return 'Error';
+          }
+          var rounded = Number(Math.round(result + 'e+10') + 'e-10');
+          return rounded.toString();
+        } catch (e) {
+          return 'Error';
+        }
+      }
+
+      function calculate() {
+        if (!expression) return;
+        var original = expression;
+        var res = evaluateExpression(expression);
+
+        if (res === 'Error') {
+          historyDisplay.textContent = original + ' =';
+          display.textContent = 'Error';
+          expression = '';
+          lastCalculated = true;
+          return;
+        }
+
+        historyDisplay.textContent = original + ' =';
+        display.textContent = res;
+        if (window.CalcHistory) {
+          window.CalcHistory.save('standard', original, res);
+          renderHistory();
+        }
+        expression = res;
+        lastCalculated = true;
+      }
+
+      function handleMemory(action) {
+        var currentVal = parseFloat(display.textContent);
+        if (isNaN(currentVal) && action !== 'mc') return;
+
+        if (action === 'mc') {
+          memory = 0;
+        } else if (action === 'mr') {
+          appendValue(memory.toString());
+        } else if (action === 'm-plus') {
+          memory += currentVal;
+          lastCalculated = true;
+        } else if (action === 'm-minus') {
+          memory -= currentVal;
+          lastCalculated = true;
+        }
+      }
+
+      document.querySelectorAll('#standard .calc-key').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var val = btn.getAttribute('data-val');
+          var action = btn.getAttribute('data-action');
+
+          if (val !== null) {
+            appendValue(val);
+          } else if (action === 'calculate') {
+            calculate();
+          } else if (action === 'clear') {
+            clearAll();
+          } else if (action === 'backspace') {
+            backspace();
+          } else if (action && action.startsWith('m')) {
+            handleMemory(action);
+          }
+        });
+      });
+
+      if (clearHistoryBtn) {
+        clearHistoryBtn.addEventListener('click', function () {
+          if (window.CalcHistory) {
+            window.CalcHistory.clear('standard');
+            renderHistory();
+          }
+        });
+      }
+
+      window.addEventListener('keydown', function (e) {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+        if ((e.key >= '0' && e.key <= '9') || ['+', '-', '*', '/', '.', '(', ')', '%'].includes(e.key)) {
+          e.preventDefault();
+          appendValue(e.key);
+        } else if (e.key === 'Enter' || e.key === '=') {
+          e.preventDefault();
+          calculate();
+        } else if (e.key === 'Backspace') {
+          e.preventDefault();
+          backspace();
+        } else if (e.key === 'Escape' || e.key.toLowerCase() === 'c') {
+          e.preventDefault();
+          clearAll();
+        }
+      });
+
+      renderHistory();
+    })();
+  </script>
+</body>
+</html>
