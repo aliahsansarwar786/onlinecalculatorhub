@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://onlinecalculatorhub.site/sitemap.xml
+Sitemap: https://onlinecalculator-hub.vercel.app/sitemap.xml
